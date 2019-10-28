@@ -17,12 +17,16 @@
         border-color: #222 !important;
     }
     
-    /* == NOTIFICATION == */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  NOTIFICATION
+     */
     #notifications > li {
         border: none;
     }
     
-    /* == DROPDOWN IN HEADER == */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  DROPDOWN IN THE HEADER
+     */
     .tabs > .dropdown-nav-item:hover > a,
     .tabs > .dropdown-nav-item > a:focus,
     .tabs > li > .close-container-control:focus,
@@ -47,7 +51,9 @@
     }
     
     
-    /*** MENU ***/
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  MENU
+     */
     #menu {
         background: #000 !important;
         box-shadow: unset !important;
@@ -78,13 +84,15 @@
         background: hsla(0, 0%, 100%, .05);
     }
     
-    /*-- User item */
+    /* User item
+     */
     #menu .user-nav-item {
         background: #000;
         border-top: solid 1px hsla(0, 0%, 100%, .1);
     }
     
-    /*-- Dropdown sub-menu */
+    /* Dropdown sub-menu
+     */
     #layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2,
     #layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2 {
         background: hsla(0, 0%, 0%, .8);
@@ -102,7 +110,8 @@
         background: hsla(0, 0%, 100%, .2);
     }
     
-    /*-- Sidebar toggle */
+    /* Sidebar toggle
+     */
     #toggle-sidebar {
         right: -1px;
     }
@@ -111,7 +120,9 @@
         background: #000 !important;
     }
     
-    /* == CONTENT LIST == */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  CONTENT LIST
+     */
     .icinga-module.module-monitoring .state-table tr[href]:hover {
         background: #111;
     }
@@ -131,7 +142,9 @@
     }
     
     
-    /* == CONTROLS == */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  CONTROLS
+     */
     .controls {
         background: #222;
     }
@@ -191,7 +204,9 @@
         background: #222 !important;
     }
     
-    /* == PAGINATION CONTROL == */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  PAGINATION CONTROL
+     */
     .icinga-module.module-monitoring .joystick-pagination a {
         color: #fff;
     }
@@ -199,7 +214,9 @@
         color: #444;
     }
     
-    /* == PROBLEMS BAR == */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  PROBLEMS BAR
+     */
     .icinga-module.module-monitoring .monitoring-statusbar {
         background: #111;
         color: #fff;
@@ -208,13 +225,17 @@
         display: none;
     }
     
-    /* == TACTICAL OVERVIEW == */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  TACTICAL OVERVIEW
+     */
     .icinga-module.module-monitoring div.box.problem_hosts.state_down,
     .icinga-module.module-monitoring div.box.ok_hosts.state_up {
         border: none;
     }
     
-    /* == LOGIN == */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  LOGIN AREA
+     */
     #login {
         background: #000;
     }
@@ -239,10 +260,14 @@
     #login input:focus, #login input[type="submit"]:focus {
         outline: 3px solid rgba(0,0,0,0.5);
     }
-    
-    
-    /* == COLORIDES == */
-    /* Orange */
+
+
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  MONITORING COLORS
+     */
+
+    /* Orange
+     */
     .icinga-module.module-monitoring .state-col.state-warning {
         background: rgba(255, 151, 0, .25);
         border-left: 6px solid #C70;
@@ -256,9 +281,10 @@
     .icinga-module.module-monitoring .service-grid-link.state-warning.handled {
         background: rgba(255, 151, 0, .25);
         border: 2px solid #C70;
-    
     }
-    /* Violet */
+
+    /* Violet
+     */
     .icinga-module.module-monitoring .state-col.state-unknown {
         background: rgba(255, 0, 255, .2);
         border-left: 6px solid #C0C;
@@ -270,7 +296,9 @@
         background: rgba(255, 0, 255, .2);
         border: 2px solid #C0C;
     }
-    /* Red */
+
+    /* Red
+     */
     .icinga-module.module-monitoring .state-col.state-critical,
     .icinga-module.module-monitoring .state-col.state-down,
     .icinga-module.module-monitoring .state-col.state-critical.handled,
@@ -286,7 +314,9 @@
     .icinga-module.module-monitoring div.box.problem_hosts.state_down {
         background: #C00;
     }
-    /* Green */
+
+    /* Green
+     */
     .icinga-module.module-monitoring .state-col.state-ok,
     .icinga-module.module-monitoring .state-col.state-up {
         background: rgba(0, 255, 0, .2);
@@ -299,14 +329,18 @@
     .icinga-module.module-monitoring div.box.ok_hosts.state_up {
         background: #0A0;
     }
-    /* Blue */
+
+    /* Blue
+     */
     .icinga-module.module-monitoring .state-col.state-pending {
         background: rgba(0, 0, 255, .2);
         border-left: 6px solid #00A;
     }
     
     
-    /* = BADGES = */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  BADGE COLORS
+     */
     .badge.handled {
         background: #222 !important;
         color: #fff;
@@ -330,7 +364,9 @@
         background: #C70;
     }
     
-    /* == Notification box == */
+    /* +----------------------------------------------------------------------------------------------------------------------- 
+     * |  BOTTOM NOTIFICATION PANEL COLORS
+     */
     #notifications > li.error {
         background: #C00;
     }
