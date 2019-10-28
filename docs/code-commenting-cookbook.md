@@ -1,6 +1,6 @@
-# Code commentary syntax cookbook
+# Code commenting cookbook
 
-How to comment in this file?
+Let's cook some comments in code! This cookbook will you guide how.
 
 ## Simple local comments
 
@@ -24,21 +24,21 @@ Your thoughts goes into the first comment line.
 
 ## Heading section comments
 
-To keep code clean and cozy sectioning whole code is a must.
+To keep code clean and cozy sectioning whole code is necessary.
 So that's what the _Heading section comments_ are made for.
 
 Simply ident new section with two blank lines and start three line CSS comment underneath.
-Then do a heading line. The heading line must have always width to 128 col.
-Text underneath is uppercased and prefixed with a pipeline character.
+Then do a heading line. The heading line must be always made of asterisks and have width to 64th column.
+Text underneath is uppercase, one space away of an asterisk.
 
 ```css
     ...
 }
 
 
-/* +---------------------------------------------------------------------------------------------------------------------------
- * |  MY AWESOME NEW SECTION!
- */
+/**************************************************************
+ * MY AWESOME NEW SECTION!
+**/
 #stuff {
     ...
 ```

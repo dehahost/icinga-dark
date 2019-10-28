@@ -1,0 +1,87 @@
+/************************** 
+* CORE
+**/
+
+/* Make key elements transparent and ready for darker colors.
+*/
+#layout,
+#header,
+#menu,
+.controls,
+#login,
+#notifications > li,
+.tabs > .dropdown-nav-item > ul,
+.tabs > .dropdown-nav-item > ul > li:hover > a,
+#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2,
+#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2
+{
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+}
+
+/* Disable arrow on the selected menu item
+*/
+#menu .nav-level-2 > .nav-item.active:after
+{
+    display: none;
+}
+
+/* Recolor focus color
+*/
+a:focus,
+button:focus, 
+input[type="checkbox"]:focus
+{
+outline: 3px solid rgba(255, 255, 255, .24);
+}
+
+/* Set some transparency for side popup sub-menu
+*/
+#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2,
+#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2
+{
+    background: rgba(0, 0, 0, .5);
+}
+
+/************************** 
+* USERSTYLE OPTIONS
+**/
+
+/* OLED black option
+*//*
+html
+{
+    background: #000;
+}
+.icinga-module.module-monitoring .state-table tr[href]:hover,
+#menu .nav-level-1 > .nav-item.active
+{
+    background: rgba(255, 255, 255, .08);
+}
+*/
+
+/* Gruvbox option
+*/
+html
+{
+    background: #282828;
+}
+.icinga-module.module-monitoring .state-table tr[href]:hover,
+#menu .nav-level-1 > .nav-item.active,
+.tabs > li.active > a, .tabs > li > a:focus,
+.tabs > .dropdown-nav-item:hover > a, 
+.tabs > .dropdown-nav-item > a:focus, 
+.tabs > li > .close-container-control:focus, 
+.tabs > li > .close-container-control:hover, 
+.tabs > li > .refresh-container-control:focus, 
+.tabs > li > .refresh-container-control:hover,
+.tabs > .dropdown-nav-item > ul > li:hover > a
+{
+    background: #1d2021;
+    color: rgba(255, 255, 255, 0.5);
+}
+.tabs > .dropdown-nav-item > ul > li:hover > a {
+    text-decoration: underline;
+}
