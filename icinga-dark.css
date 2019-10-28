@@ -1,0 +1,343 @@
+@-moz-document regexp("^(http|https)://.*/icingaweb2.*") {
+    #layout,
+    .tabs > .dropdown-nav-item > ul,
+    .icinga-module.module-monitoring .tactical div.box.contents {
+        background: #000;
+        color: #CCC;
+    }
+    #header {
+        background: #000;
+    }
+    #sidebar {
+        background: hsla(0, 0%, 100%, .05);
+        border-right: solid hsla(0, 0%, 100%, .05) 1px;
+    }
+    
+    table {
+        border-color: #222 !important;
+    }
+    
+    /* == NOTIFICATION == */
+    #notifications > li {
+        border: none;
+    }
+    
+    /* == DROPDOWN IN HEADER == */
+    .tabs > .dropdown-nav-item:hover > a,
+    .tabs > .dropdown-nav-item > a:focus,
+    .tabs > li > .close-container-control:focus,
+    .tabs > li > .close-container-control:hover,
+    .tabs > li > .refresh-container-control:focus,
+    .tabs > li > .refresh-container-control:hover {
+        background: #000;
+        color: #fff;
+    }
+    
+    .tabs > li.active > a,
+    .tabs > li > a:focus {
+        background: hsla(0, 0%, 100%, .1);
+        color: #fff;
+    }
+    .tabs > .dropdown-nav-item > ul > li:hover > a {
+        background: #222;
+    }
+    .tabs > .dropdown-nav-item > ul {
+        border: 1px solid #333;
+        border-radius: 0;
+    }
+    
+    
+    /*** MENU ***/
+    #menu {
+        background: #000 !important;
+        box-shadow: unset !important;
+    }
+    
+    #menu .nav-item a {
+        color: #CCC !important;
+    }
+    #menu .nav-level-1 > .nav-item:not(.selected) > a:hover,
+    #menu .nav-level-1 > .nav-item:not(.selected) > a:focus,
+    #menu .nav-level-2 > .nav-item:not(.selected):not(.active) > a:hover, 
+    #menu .nav-level-2 > .nav-item:not(.selected):not(.active) > a:focus {
+        background: hsla(0, 0%, 100%, .15) !important;
+    }
+    #menu .active > a {
+        color: #FFF !important;
+    }
+    
+    #menu .active:after,
+    ul:not(.nav-level-2) > .selected > a:after {
+        display: none !important;
+    }
+    
+    #menu input.search.active,
+    #menu .nav-level-1 > .nav-item.active,
+    #menu .nav-level-2 > .nav-item.active,
+    ul:not(.nav-level-2) > .selected > a {
+        background: hsla(0, 0%, 100%, .05);
+    }
+    
+    /*-- User item */
+    #menu .user-nav-item {
+        background: #000;
+        border-top: solid 1px hsla(0, 0%, 100%, .1);
+    }
+    
+    /*-- Dropdown sub-menu */
+    #layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2,
+    #layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2 {
+        background: hsla(0, 0%, 0%, .8);
+        border: none;
+        border-radius: none;
+    }
+    #layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2::after,
+    #layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2::after {
+        display: none;
+    }
+    #layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2 > .nav-item > a:hover, 
+    #layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2 > .nav-item > a:focus, 
+    #layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2 > .nav-item > a:hover, 
+    #layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2 > .nav-item > a:focus {
+        background: hsla(0, 0%, 100%, .2);
+    }
+    
+    /*-- Sidebar toggle */
+    #toggle-sidebar {
+        right: -1px;
+    }
+    #toggle-sidebar i {
+        color: #888!important;
+        background: #000 !important;
+    }
+    
+    /* == CONTENT LIST == */
+    .icinga-module.module-monitoring .state-table tr[href]:hover {
+        background: #111;
+    }
+    .icinga-module.module-monitoring .state-table tr[href].active {
+        background: #222;
+    }
+    .icinga-module.module-monitoring .overview-plugin-output,
+    .icinga-module.module-monitoring .host-meta,
+    .icinga-module.module-monitoring .service-meta,
+    .name-value-table > tbody > tr > th,
+    .comment-time,
+    label {
+        color: #888;
+    }
+    .comment-list > dt:hover {
+        background: #222;
+    }
+    
+    
+    /* == CONTROLS == */
+    .controls {
+        background: #222;
+    }
+    .link-button,
+    .action-link,
+    .button-link {
+        color: #00adbb;
+    }
+    .button-link {
+        background: #111;
+    }
+    .button-link:hover {
+        background: #222;
+    }
+    select {
+        color: #000;
+    }
+    .control-button, input[type="submit"] {
+        color: #00adbb;
+        border-color: #00adbb;
+        background: transparent;
+    }
+    .control-button:focus, .control-button:hover, input[type="submit"]:focus, input[type="submit"]:hover {
+        background: #00adbb;
+    }
+    input.search:focus {
+        background: #111;
+    }
+    .pagination-control li > a:hover {
+        background: #444;
+    }
+    .common-table tr[href]:hover {
+        background: #333;
+    }
+    input:not([type]), input[type=text], input[type=date], input[type=datetime-local], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=time], input[type=url], textarea {
+        color: #fff;
+        background: #000;
+    }
+    input.search {
+        color: #fff;
+    }
+    
+    table.action tbody tr {
+        background: none !important;
+    }
+    table.action tbody tr > th {
+        background: #333 !important;
+    }
+    
+    pre {
+        background: none !important;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+    
+    .dashboard-link:hover {
+        background: #222 !important;
+    }
+    
+    /* == PAGINATION CONTROL == */
+    .icinga-module.module-monitoring .joystick-pagination a {
+        color: #fff;
+    }
+    .icinga-module.module-monitoring .service-grid-table td {
+        color: #444;
+    }
+    
+    /* == PROBLEMS BAR == */
+    .icinga-module.module-monitoring .monitoring-statusbar {
+        background: #111;
+        color: #fff;
+    }
+    .icinga-module.module-monitoring .monitoring-statusbar:before {
+        display: none;
+    }
+    
+    /* == TACTICAL OVERVIEW == */
+    .icinga-module.module-monitoring div.box.problem_hosts.state_down,
+    .icinga-module.module-monitoring div.box.ok_hosts.state_up {
+        border: none;
+    }
+    
+    /* == LOGIN == */
+    #login {
+        background: #000;
+    }
+    
+    #login .login-form {
+        box-shadow: 0 0 24px rgba(255,255,255,0.75);
+    }
+    
+    #login-footer > p {
+        color: #555;
+    }
+    #login-footer > p:after {
+        content: " | Icinga Dark by dehahost"
+    }
+    
+    #login input[type="submit"] {
+        background: #333;
+    }
+    #login input[type="submit"]:hover {
+        background: #555;
+    }
+    #login input:focus, #login input[type="submit"]:focus {
+        outline: 3px solid rgba(0,0,0,0.5);
+    }
+    
+    
+    /* == COLORIDES == */
+    /* Orange */
+    .icinga-module.module-monitoring .state-col.state-warning {
+        background: rgba(255, 151, 0, .25);
+        border-left: 6px solid #C70;
+    }
+    .icinga-module.module-monitoring .state-col.state-warning.handled {
+        border-left: 6px solid #C70;
+    }
+    .icinga-module.module-monitoring .service-grid-link.state-warning {
+        background: #C70;
+    }
+    .icinga-module.module-monitoring .service-grid-link.state-warning.handled {
+        background: rgba(255, 151, 0, .25);
+        border: 2px solid #C70;
+    
+    }
+    /* Violet */
+    .icinga-module.module-monitoring .state-col.state-unknown {
+        background: rgba(255, 0, 255, .2);
+        border-left: 6px solid #C0C;
+    }
+    .icinga-module.module-monitoring .service-grid-link.state-unknown {
+        background: #C0C;
+    }
+    .icinga-module.module-monitoring .service-grid-link.state-unknown.handled {
+        background: rgba(255, 0, 255, .2);
+        border: 2px solid #C0C;
+    }
+    /* Red */
+    .icinga-module.module-monitoring .state-col.state-critical,
+    .icinga-module.module-monitoring .state-col.state-down,
+    .icinga-module.module-monitoring .state-col.state-critical.handled,
+    .icinga-module.module-monitoring .state-col.state-down.handled {
+        background: rgba(255, 0, 0, .4);
+        border-left: 6px solid #C00;
+    }
+    .icinga-module.module-monitoring .service-grid-link.state-critical.handled {
+        background: rgba(255, 0, 0, .4);
+        border: 2px solid #C00;
+    }
+    .icinga-module.module-monitoring .service-grid-link.state-critical,
+    .icinga-module.module-monitoring div.box.problem_hosts.state_down {
+        background: #C00;
+    }
+    /* Green */
+    .icinga-module.module-monitoring .state-col.state-ok,
+    .icinga-module.module-monitoring .state-col.state-up {
+        background: rgba(0, 255, 0, .2);
+        border-left: 6px solid #0A0;
+    }
+    .icon-stateful.state-ok {
+        color: #0A0;
+    }
+    .icinga-module.module-monitoring .service-grid-link.state-ok,
+    .icinga-module.module-monitoring div.box.ok_hosts.state_up {
+        background: #0A0;
+    }
+    /* Blue */
+    .icinga-module.module-monitoring .state-col.state-pending {
+        background: rgba(0, 0, 255, .2);
+        border-left: 6px solid #00A;
+    }
+    
+    
+    /* = BADGES = */
+    .badge.handled {
+        background: #222 !important;
+        color: #fff;
+    }
+    .badge.handled.state-critical {
+        background: rgba(255, 0, 0, .25) !important;
+        border: 1px solid #C00;
+    }
+    .badge.state-critical {
+        background: #C00;
+    }
+    .badge.handled.state-unknown {
+        background: rgba(255, 0, 255, .2) !important;
+        border: 1px solid #C0C;
+    }
+    .badge.state-ok {
+        background: rgba(0, 255, 0, .20) !important;
+        border: 1px solid #0A0;
+    }
+    .badge.state-warning {
+        background: #C70;
+    }
+    
+    /* == Notification box == */
+    #notifications > li.error {
+        background: #C00;
+    }
+    #notification > li.warning {
+        background: #C70;
+    }
+    #notification > li.ok {
+        background: #0A0;
+    }
+    }
