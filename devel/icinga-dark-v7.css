@@ -7,18 +7,38 @@
 #layout,
 #header,
 #menu,
-.controls,
 #login,
 #notifications > li,
 .tabs > .dropdown-nav-item > ul,
 .tabs > .dropdown-nav-item > ul > li:hover > a,
 #layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2,
-#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2
+#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2,
+.pagination-control li.active > a, .pagination-control li.active > a:hover,
+.icinga-module.module-monitoring div.box.process,
+.icinga-module.module-monitoring div.box.features,
+.icinga-module.module-monitoring div.timeline-legend,
+.icinga-module.module-monitoring .monitoring-statusbar,
+.icinga-module.module-monitoring .monitoring-statusbar:before,
+.icinga-module.module-monitoring .timeline-notification.extrapolated,
+.icinga-module.module-monitoring .timeline-hard-state.extrapolated
 {
     background: transparent;
     box-shadow: none;
     border: none;
     color: #fff;
+}
+
+/* Dimmed tr border color
+ */
+tr {
+    border-color: rgba(255, 255, 255, .1) !important;
+    border-left: none !important;
+}
+
+/* Fix colors for interactive elements with white background
+ */
+button, optgroup, select, textarea {
+    color: #000;
 }
 
 /* Disable arrow on the selected menu item
@@ -34,54 +54,36 @@ a:focus,
 button:focus, 
 input[type="checkbox"]:focus
 {
-outline: 3px solid rgba(255, 255, 255, .24);
+    outline: 3px solid rgba(255, 255, 255, .24);
 }
 
-/* Set some transparency for side popup sub-menu
-*/
-#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2,
-#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2
-{
-    background: rgba(0, 0, 0, .5);
+/* Fix transparent search input box
+ */
+input.search:focus {
+    background-color: transparent;
+    background-image: url('../img/icons/search_icinga_blue.png') no-repeat !important
+}
+
+
+/************************** 
+* DOC SECTION
+**/
+
+/* <pre> element background fix
+ */
+pre {
+    background: rgba(255, 255, 255, .05);
+}
+
+/* table coloring fix
+ */
+.icinga-module.module-doc tbody > tr:nth-child(odd) {
+    background: rgba(255, 255, 255, .03);
+}
+.icinga-module.module-doc tbody > tr:nth-child(even) {
+    background: transparent;
 }
 
 /************************** 
 * USERSTYLE OPTIONS
 **/
-
-/* OLED black option
-*//*
-html
-{
-    background: #000;
-}
-.icinga-module.module-monitoring .state-table tr[href]:hover,
-#menu .nav-level-1 > .nav-item.active
-{
-    background: rgba(255, 255, 255, .08);
-}
-*/
-
-/* Gruvbox option
-*/
-html
-{
-    background: #282828;
-}
-.icinga-module.module-monitoring .state-table tr[href]:hover,
-#menu .nav-level-1 > .nav-item.active,
-.tabs > li.active > a, .tabs > li > a:focus,
-.tabs > .dropdown-nav-item:hover > a, 
-.tabs > .dropdown-nav-item > a:focus, 
-.tabs > li > .close-container-control:focus, 
-.tabs > li > .close-container-control:hover, 
-.tabs > li > .refresh-container-control:focus, 
-.tabs > li > .refresh-container-control:hover,
-.tabs > .dropdown-nav-item > ul > li:hover > a
-{
-    background: #1d2021;
-    color: rgba(255, 255, 255, 0.5);
-}
-.tabs > .dropdown-nav-item > ul > li:hover > a {
-    text-decoration: underline;
-}
