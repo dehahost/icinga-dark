@@ -1,5 +1,11 @@
-/************************** 
-* CORE
+/**************************************************************
+ * ICINGA DARK V7
+ **************************************************************
+ * BY DEHAHOST
+**/
+
+/**************************************************************
+ * CORE
 **/
 
 /* Make key elements transparent and ready for darker colors.
@@ -64,8 +70,21 @@ input.search:focus {
     background-image: url('../img/icons/search_icinga_blue.png') no-repeat !important
 }
 
+/* Show user about the presence of this userstyle on System / About page.
+ */
+#about > .name-value-list:after {
+    position: relative;
+    top: 8px;
+    
+    /* Strawberry topping */
+    padding: 0px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    
+    content: "Icinga Dark V7 by dehahost";
+}
 
-/************************** 
+
+/************************************************************** 
 * DOC SECTION
 **/
 
@@ -84,6 +103,6 @@ pre {
     background: transparent;
 }
 
-/************************** 
+/**************************************************************
 * USERSTYLE OPTIONS
 **/

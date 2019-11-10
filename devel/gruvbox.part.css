@@ -1,6 +1,24 @@
 /**************************************************************
- * GRUVBOX OPTIONS
+ * GRUVBOX SCHEME V1
 **/
+
+/* Tell the user what scheme is used in a really intelligent way.
+ */
+ #about > table:after {
+    position: relative;
+    top: 8px;
+    
+    /* Fix the table!! */
+    margin-left: -200px;
+    left: 100px;
+    
+    /* Strawberry topping */
+    padding: 4px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+    
+    content: "Gruvbox scheme V1";
+}
 
 #layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2 > .nav-item > a,
 #menu .nav-item a,
