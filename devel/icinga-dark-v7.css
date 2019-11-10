@@ -14,44 +14,42 @@
 #header,
 #menu,
 #login,
-#notifications > li,
-.tabs > .dropdown-nav-item > ul,
-.tabs > .dropdown-nav-item > ul > li:hover > a,
-#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2,
-#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2,
-.pagination-control li.active > a, .pagination-control li.active > a:hover,
-.icinga-module.module-monitoring div.box.process,
-.icinga-module.module-monitoring div.box.features,
-.icinga-module.module-monitoring div.timeline-legend,
-.icinga-module.module-monitoring .monitoring-statusbar,
 .icinga-module.module-monitoring .monitoring-statusbar:before,
+.icinga-module.module-monitoring div.timeline-legend,
 .icinga-module.module-monitoring .timeline-notification.extrapolated,
-.icinga-module.module-monitoring .timeline-hard-state.extrapolated
+.icinga-module.module-monitoring .timeline-hard-state.extrapolated,
+.icinga-module.module-monitoring div.box.stats
 {
     background: transparent;
-    box-shadow: none;
-    border: none;
     color: #fff;
 }
+
+/* Remove bordering and shadow drop.
+ */
+h1,
+#menu,
+#layout.twocols #col2,
+#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2,
+#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2,
+.tabs > .dropdown-nav-item > ul,
+.tabs > .dropdown-nav-item > ul > li:hover > a,
+#notifications > li,
+.icinga-module.module-monitoring div.box.process,
+.icinga-module.module-monitoring div.box.features,
+.icinga-module.module-monitoring div.box.stats,
+.icinga-module.module-monitoring .monitoring-statusbar,
+.pagination-control li.active > a, .pagination-control li.active > a:hover
+{
+    box-shadow: none;
+    border: none;
+}
+
 
 /* Dimmed tr border color
  */
 tr {
     border-color: rgba(255, 255, 255, .1) !important;
     border-left: none !important;
-}
-
-/* Fix colors for interactive elements with white background
- */
-button, optgroup, select, textarea {
-    color: #000;
-}
-
-/* Disable arrow on the selected menu item
-*/
-#menu .nav-level-2 > .nav-item.active:after
-{
-    display: none;
 }
 
 /* Recolor focus color
@@ -70,6 +68,26 @@ input.search:focus {
     background-image: url('../img/icons/search_icinga_blue.png') no-repeat !important
 }
 
+
+/* Fix colors for some text elements and interactive elements with white background
+ */
+#login-footer, input, button, optgroup, select, textarea {
+    color: #000;
+}
+/* Previous fix crippled these out, so let's fix them...
+ */
+input.search {
+    color: #fff;
+}
+
+/* Disable arrow on the selected menu item
+*/
+#menu .nav-level-2 > .nav-item.active:after
+{
+    display: none;
+}
+
+
 /* Show user about the presence of this userstyle on System / About page.
  */
 #about > .name-value-list:after {
@@ -80,7 +98,7 @@ input.search:focus {
     padding: 0px;
     border-top: 1px solid rgba(255, 255, 255, .1);
     
-    content: "Icinga Dark V7 by dehahost";
+    content: "Icinga Dark V7/20191117 by dehahost";
 }
 
 
