@@ -4,7 +4,7 @@
 
 /* Tell the user what scheme is used in a really intelligent way.
  */
-#about > table:after {
+ #about > table:after {
     position: relative;
     top: 8px;
     
@@ -17,17 +17,10 @@
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid rgba(255, 255, 255, .05);
     
-    content: "Gruvbox scheme V1/20191115";
+    content: "Gruvbox scheme V1/20191117";
 }
 
-#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2 > .nav-item > a,
-#menu .nav-item a,
-.link-button,
-.action-link {
-    color: #EBDBB2 !important;
-}
-
-/* Background for page and static overlays
+/* Background for whole page and some static overlays
  */
 html,
 .controls,
@@ -36,6 +29,7 @@ html,
 {
     background: #282828 !important;
 }
+
 
 /* Hover & focus
  */
@@ -49,6 +43,7 @@ html,
 .icinga-module.module-monitoring .state-table tr[href]:hover,
 .common-table tr[href]:hover,
 .tabs > li > a:focus,
+.tabs > li > a:hover,
 .tabs > .dropdown-nav-item:hover > a,
 .tabs > .dropdown-nav-item > a:focus,
 .tabs > li > .close-container-control:focus,
@@ -59,21 +54,30 @@ html,
 .pagination-control li > a:hover,
 .dashboard-link:hover,
 #toggle-sidebar:hover i, #toggle-sidebar:focus i,
-.comment-list > dt:hover
+.comment-list > dt:hover,
+.tabs > .dropdown-nav-item > ul > li:hover > a
 {
     background: #504945 !important;
     color: #EBDBB2 !important;
 }
-.tabs > .dropdown-nav-item > ul > li:hover > a {
-    text-decoration: underline;
-}
 
-/* Hover for text only
+/* Textal hover & link color
  */
 #about .about-links i:hover,
-#about .about-social i:hover {
+#about .about-social i:hover,
+#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2 > .nav-item > a,
+#menu .nav-item a,
+.link-button,
+.action-link{
     color: #EBDBB2 !important;
 }
+
+/* NO hover decoration
+ */
+.tabs > li > a:hover {
+    text-decoration: none;
+}
+
 
 /* Selected / Active
  */
@@ -88,6 +92,7 @@ html,
 #menu .nav-level-1 > .nav-item.active {
     background: #32302F;
 }
+
 
 /* Sidebar menu & Popup color
  */
