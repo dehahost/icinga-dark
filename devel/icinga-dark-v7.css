@@ -10,7 +10,7 @@
 **/
 
 /* Make key elements transparent and ready for darker colors.
-*/
+ */
 #layout,
 #header,
 #menu,
@@ -29,17 +29,17 @@
 h1,
 #menu,
 #layout.twocols #col2,
-#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2,
-#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2,
-.tabs > .dropdown-nav-item > ul,
-.tabs > .dropdown-nav-item > ul > li:hover > a,
-#notifications > li,
+#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1>.nav-item.hover>.nav-level-2,
+#layout:not(.minimal-layout) #menu .nav-level-1>.nav-item:not(.active).hover>.nav-level-2,
+.tabs>.dropdown-nav-item>ul,
+.tabs>.dropdown-nav-item>ul>li:hover>a,
+#notifications>li,
 .icinga-module.module-monitoring div.box.process,
 .icinga-module.module-monitoring div.box.features,
 .icinga-module.module-monitoring div.box.stats,
 .icinga-module.module-monitoring .monitoring-statusbar,
-.pagination-control li.active > a,
-.pagination-control li.active > a:hover {
+.pagination-control li.active>a,
+.pagination-control li.active>a:hover {
     box-shadow: none;
     border: none;
 }
@@ -77,20 +77,22 @@ input[type=search]:focus:not([readonly]),
 input[type=tel]:focus:not([readonly]),
 input[type=time]:focus:not([readonly]),
 input[type=url]:focus:not([readonly]),
-.comment-list > dt,
+.comment-list>dt,
 #login-footer {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
 
 /* Recolor focus color
-*/
+ */
 a:focus,
 button:focus,
 input[type="checkbox"]:focus,
-#login input:focus, #login input[type="submit"]:focus {
+#login input:focus,
+#login input[type="submit"]:focus {
     outline: 3px solid rgba(255, 255, 255, .24);
 }
+
 /* Fix transparent search input box
  */
 input.search:focus {
@@ -109,6 +111,7 @@ select,
 textarea {
     color: #000;
 }
+
 /* Previous fix crippled these out, so let's fix them...
  */
 input.search {
@@ -116,15 +119,15 @@ input.search {
 }
 
 /* Disable arrow on the selected menu item
-*/
-#menu .nav-level-2 > .nav-item.active:after {
+ */
+#menu .nav-level-2>.nav-item.active:after {
     display: none;
 }
 
 
 /* Show user about the presence of this userstyle on System / About page.
  */
-#about > .name-value-list:after {
+#about>.name-value-list:after {
     position: relative;
     top: 8px;
 
@@ -154,10 +157,11 @@ pre {
 
 /* table coloring fix
  */
-.icinga-module.module-doc tbody > tr:nth-child(odd) {
+.icinga-module.module-doc tbody>tr:nth-child(odd) {
     background: rgba(255, 255, 255, .03);
 }
-.icinga-module.module-doc tbody > tr:nth-child(even) {
+
+.icinga-module.module-doc tbody>tr:nth-child(even) {
     background: transparent;
 }
 
