@@ -17,7 +17,7 @@ html,
 
 
 /* Text coloring
- */
+  */
 th,
 label,
 ::placeholder,
@@ -33,7 +33,7 @@ label,
 }
 
 /* Text highlits (headers and links in headers)
- */
+  */
 h1,
 h2,
 h3,
@@ -51,7 +51,7 @@ input.search {
 }
 
 /* Hover & focus
- */
+  */
 #menu .nav-level-1>.nav-item>a:hover,
 #menu .nav-level-2>.nav-item:hover,
 #menu .nav-level-2>.nav-item.active:hover,
@@ -82,7 +82,7 @@ input.search:focus {
 }
 
 /* Textal hover
- */
+  */
 a:hover,
 #about .about-links i:hover,
 #about .about-social i:hover {
@@ -90,7 +90,7 @@ a:hover,
 }
 
 /* Selected / Active
- */
+  */
 .tabs>li.active>a,
 #menu .nav-level-1>.nav-item.active>a,
 #menu .nav-level-2>.nav-item.active,
@@ -104,18 +104,18 @@ input.search.active {
 }
 
 /* Different color for navigation lv. 1
- */
+  */
 #menu .nav-level-1>.nav-item.active {
     background: hsl(0, 0%, 0%);
 }
 
 
 /**************************************************************
- * NAVIGATION
-**/
+  * NAVIGATION
+ **/
 
 /* Sidebar menu & Popup color
- */
+  */
 #layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1>.nav-item.hover>.nav-level-2,
 #layout:not(.minimal-layout) #menu .nav-level-1>.nav-item:not(.active).hover>.nav-level-2,
 .tabs>.dropdown-nav-item>ul {
@@ -123,7 +123,7 @@ input.search.active {
 }
 
 /* Link color and icon links
- */
+  */
 a,
 .link-button,
 button>i[class^="icon-"],
@@ -132,7 +132,7 @@ button>i[class*=" icon-"] {
 }
 
 /* Button
- */
+  */
 .control-button,
 input[type="submit"],
 .button-link {
@@ -140,7 +140,6 @@ input[type="submit"],
     background: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 60%);
 }
-
 .control-button:focus,
 .control-button:hover,
 input[type="submit"]:focus,
@@ -152,18 +151,18 @@ input[type="submit"]:hover,
 
 
 /**************************************************************
- * IMPROVING READIBILITY
-**/
+  * IMPROVING READIBILITY
+ **/
 
 /* Service and its output are slightly highlighted
- */
+  */
 .selectable,
 .icinga-module.module-monitoring .plugin-output {
     color: hsl(0, 0%, 64%);
 }
 
 /* Dim links inside second column content area
- */
+  */
 #col2 .content a,
 #col2 .content button {
     opacity: 0.5;
@@ -171,56 +170,56 @@ input[type="submit"]:hover,
 
 
 /**************************************************************
- * ESSENTIALS
-**/
+  * ESSENTIALS
+ **/
 
 /* Input types have foreground color
- */
+  */
 button,
 input,
 optgroup,
 select,
 textarea {
-    background: hsla(0, 0%, 100%, .05);
+    background: hsla(0, 0%, 4%);
     color: hsl(0, 0%, 100%) !important;
     border: none;
 }
 
 /* NO hover decoration
- */
+  */
 .tabs>li>a:hover {
     text-decoration: none;
 }
 
 /* Disabled pagination
- */
+  */
 .pagination-control li.disabled {
     color: hsl(0, 0%, 25%);
 }
 
 /* Table headers are alwas in bold 
- */
+  */
 th,
 label {
     font-weight: bold !important;
 }
 
 /* Blockquote
- */
+  */
 .icinga-module.module-monitoring .plugin-output {
     border-color: hsl(0, 0%, 100%);
 }
 
 
 /* Firefox feature for custom scoll bars \o/
- */
+  */
 body {
     scrollbar-color: hsl(0, 0%, 8%) hsl(0, 0%, 0%);
 }
 
 
 /* Tell the user what scheme is used in a really intelligent way.
- */
+  */
 #about>table:after {
     position: relative;
     top: 8px;
@@ -239,35 +238,32 @@ body {
 
 
 /**************************************************************
- * MONITORING COLORS
-**/
+  * MONITORING COLORS
+ **/
 
 /* Green
- */
+  */
 .icinga-module.module-monitoring .state-col.state-ok,
 .icinga-module.module-monitoring .state-col.state-up {
     background: rgba(0, 170, 0, .1);
     border-left: 6px solid #0A0;
     color: rgba(0, 170, 0, .6);
 }
-
 .icon-stateful.state-ok {
     color: #0A0;
 }
-
 .icinga-module.module-monitoring .service-grid-link.state-ok,
 .icinga-module.module-monitoring div.box.ok_hosts.state_up {
     background: #0A0;
 }
 
 /* Warning
- */
+  */
 .icinga-module.module-monitoring .state-col.state-warning {
     background: rgba(255, 119, 0, .25);
     border-left: 6px solid #F70;
     color: #F70;
 }
-
 .icinga-module.module-monitoring .state-col.state-warning.handled {
     background: rgba(204, 85, 0, .1);
     border-left: 6px solid #C50;
@@ -277,21 +273,19 @@ body {
 .icinga-module.module-monitoring .service-grid-link.state-warning {
     background: #F70;
 }
-
 .icinga-module.module-monitoring .service-grid-link.state-warning.handled {
     background: #C50;
     border: 2px solid #F70;
 }
 
 /* Critical
- */
+  */
 .icinga-module.module-monitoring .state-col.state-critical,
 .icinga-module.module-monitoring .state-col.state-down {
     background: rgb(255, 0, 0, .25);
     border-left: 6px solid #F00;
     color: #F00;
 }
-
 .icinga-module.module-monitoring .state-col.state-critical.handled,
 .icinga-module.module-monitoring .state-col.state-down.handled {
     background: rgba(204, 0, 0, .1);
@@ -303,37 +297,33 @@ body {
 .icinga-module.module-monitoring div.box.problem_hosts.state_down {
     background: #F00;
 }
-
 .icinga-module.module-monitoring .service-grid-link.state-critical.handled {
     background: #C00;
     border: 2px solid #F00;
 }
 
 /* Unknown
- */
+  */
 .icinga-module.module-monitoring .state-col.state-unknown {
     background: rgba(204, 0, 204, .25);
     border-left: 6px solid #C0C;
     color: #C0C;
 }
-
 .icinga-module.module-monitoring .state-col.state-unknown.handled {
     background: rgba(136, 0, 136, .12);
     border-left: 6px solid #808;
     color: #808;
 }
-
 .icinga-module.module-monitoring .service-grid-link.state-unknown {
     background: #808;
 }
-
 .icinga-module.module-monitoring .service-grid-link.state-unknown.handled {
     background: #808;
     border: 2px solid #C0C;
 }
 
 /* Pending
- */
+  */
 .icinga-module.module-monitoring .state-col.state-pending {
     background: rgba(0, 0, 170, .25);
     border-left: 6px solid #00A;
@@ -342,8 +332,8 @@ body {
 
 
 /**************************************************************
- * BADGE COLORS
-**/
+  * BADGE COLORS
+ **/
 .badge {
     background: hsl(0, 0%, 32%);
     color: #fff !important;
@@ -353,101 +343,85 @@ body {
 .badge.state-up {
     background: #0A0;
 }
-
 .badge.state-warning {
     background: #F70;
 }
-
 .badge.state-warning.handled {
     background: #C50;
 }
-
 .badge.state-critical,
 .badge.state-down {
     background: #F00;
 }
-
 .badge.state-critical.handled {
     background: #C00;
 }
-
 .badge.state-unknown {
     background: #C0C;
 }
-
 .badge.state-unknown.handled {
     background: #808;
 }
 
 
 /**************************************************************
- * BOTTOM NOTIFICATION PANEL COLORS
-**/
+  * BOTTOM NOTIFICATION PANEL COLORS
+ **/
 #notifications>li.success {
     background: #0A0;
 }
-
 #notifications>li.warning {
     background: #F70;
 }
-
 #notifications>li.error {
     background: #F00;
 }
 
 
 /**************************************************************
- * HISTORY TIMELINE
-**/
+  * HISTORY TIMELINE
+ **/
 .icinga-module.module-monitoring .timeline-notification {
-    background: #458588;
+    background: #03C;
 }
-
 .icinga-module.module-monitoring .timeline-hard-state {
-    background: #FE8019;
+    background: #F70;
 }
-
 .icinga-module.module-monitoring .timeline-comment {
-    background: #83A598;
+    background: #8A8;
 }
-
 .icinga-module.module-monitoring .timeline-ack {
-    background: #D79921;
+    background: #D92;
 }
-
 .icinga-module.module-monitoring .timeline-downtime-start {
-    background: #928374;
+    background: #999;
+}
+.icinga-module.module-monitoring .timeline-downtime-end {
+    background: #555;
 }
 
-.icinga-module.module-monitoring .timeline-downtime-end {
-    background: #D5C4A1;
-}
 
 
 /**************************************************************
- * MONITORING HEALTH
-**/
+  * MONITORING HEALTH
+ **/
 .icinga-module.module-monitoring div.backend-running {
     background: #0A0;
 }
-
 .icinga-module.module-monitoring div.backend-not-running {
     background: #F00;
 }
 
 
 /**************************************************************
- * LOGIN PAGE
-**/
-
+  * LOGIN PAGE
+ **/
 #login .login-form {
     background: hsl(0, 0%, 10%);
 }
-
 #icinga-logo.invert {
     background-image: url('../img/icinga-logo-big.svg');
 }
-
 #login-footer {
     color: hsl(0, 0%, 40%) !important;
 }
@@ -460,8 +434,7 @@ body {
     background: hsl(0, 0%, 25%);
     color: hsl(0, 0%, 0%) !important;
 }
-
 #login input[type=submit]:hover {
-    background: hsl(0, 0%, 0%);
-    color: hsl(0, 0%, 30%) !important;
+    background: hsl(0, 0%, 32%);
+    color: hsl(0, 0%, 16%) !important;
 }

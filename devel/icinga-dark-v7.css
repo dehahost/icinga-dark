@@ -160,7 +160,6 @@ pre {
 .icinga-module.module-doc tbody>tr:nth-child(odd) {
     background: rgba(255, 255, 255, .03);
 }
-
 .icinga-module.module-doc tbody>tr:nth-child(even) {
     background: transparent;
 }
