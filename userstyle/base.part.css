@@ -97,7 +97,7 @@ input[type="checkbox"]:focus,
  */
 input.search:focus {
     background-color: transparent;
-    background-image: url('../img/icons/search_icinga_blue.png') no-repeat !important
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH3wsDDCMPbdUJMQAAAT1JREFUOMuV0j1LllEYB/DfEVwa/AC6WkFIDZIUSIbUKkgJDnoCQYM+Q3BzhoayDxDoIPdSS4u2BJU5KPgBhIZ86WWJtoaWejotx8HnuR99/I+H6/zOOde5Qs7ZcUJV38UTXC9Ln5Byiq90STgGQlU/wzQ28AH/cBMz2MHDnOKfRiBU9VPMYjyn+O1EQVUP4C1+5hSn2oG+cu15jLVvhpziL9zCWKjq+x0AnuNlTvFHt3eWqy9jqQm4ik1n5x0uNgHQ6gH4i9AE7ONGD8A4vjQBj/EgVPWFM4BHWOkAypBs4WM3JFT1Kkaw3W0O+vG6FL0o/97CBBZxrdQf4E5O8bBjEstJ97CAK6Vhn7GGXbzBJRxiMqd41AGcllDVQ3iPywW5nVP82jPQgOxh7lxAQQaxjlH8PjdQkOHSl+//AZEbd3oLq41XAAAAAElFTkSuQmCC) no-repeat !important;
 }
 
 
@@ -135,7 +135,7 @@ input.search {
     padding: 0px;
     border-top: 1px solid rgba(255, 255, 255, .1);
 
-    content: "Icinga Dark V7/20191117 by dehahost";
+    content: "Icinga Dark V7/20191124 by dehahost";
 }
 
 /* Show user about the presence of this userstyle in login footer.

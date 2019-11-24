@@ -1,0 +1,172 @@
+@-moz-document regexp("^(http|https)://.*/icingaweb2.*") {
+/**************************************************************
+ * ICINGA DARK V7
+ **************************************************************
+ * BY DEHAHOST
+**/
+
+
+/**************************************************************
+ * CORE
+**/
+
+/* Make key elements transparent and ready for darker colors.
+ */
+#layout,
+#header,
+#menu,
+#login,
+.icinga-module.module-monitoring .monitoring-statusbar:before,
+.icinga-module.module-monitoring div.timeline-legend,
+.icinga-module.module-monitoring .timeline-notification.extrapolated,
+.icinga-module.module-monitoring .timeline-hard-state.extrapolated,
+.icinga-module.module-monitoring div.box.stats {
+    background: transparent;
+    color: #fff;
+}
+
+/* Remove bordering and shadow drop.
+ */
+h1,
+#menu,
+#layout.twocols #col2,
+#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1>.nav-item.hover>.nav-level-2,
+#layout:not(.minimal-layout) #menu .nav-level-1>.nav-item:not(.active).hover>.nav-level-2,
+.tabs>.dropdown-nav-item>ul,
+.tabs>.dropdown-nav-item>ul>li:hover>a,
+#notifications>li,
+.icinga-module.module-monitoring div.box.process,
+.icinga-module.module-monitoring div.box.features,
+.icinga-module.module-monitoring div.box.stats,
+.icinga-module.module-monitoring .monitoring-statusbar,
+.pagination-control li.active>a,
+.pagination-control li.active>a:hover {
+    box-shadow: none;
+    border: none;
+}
+
+
+/* Dimmed tr and input border line
+ */
+tr,
+input:not([type]),
+input[type=text],
+input[type=date],
+input[type=datetime-local],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url] {
+    border-color: rgba(255, 255, 255, .1) !important;
+    border-left: none !important;
+}
+
+/* Dimmed table head and focused input border line
+ */
+thead,
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+.comment-list>dt,
+#login-footer {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Recolor focus color
+ */
+a:focus,
+button:focus,
+input[type="checkbox"]:focus,
+#login input:focus,
+#login input[type="submit"]:focus {
+    outline: 3px solid rgba(255, 255, 255, .24);
+}
+
+/* Fix transparent search input box
+ */
+input.search:focus {
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH3wsDDCMPbdUJMQAAAT1JREFUOMuV0j1LllEYB/DfEVwa/AC6WkFIDZIUSIbUKkgJDnoCQYM+Q3BzhoayDxDoIPdSS4u2BJU5KPgBhIZ86WWJtoaWejotx8HnuR99/I+H6/zOOde5Qs7ZcUJV38UTXC9Ln5Byiq90STgGQlU/wzQ28AH/cBMz2MHDnOKfRiBU9VPMYjyn+O1EQVUP4C1+5hSn2oG+cu15jLVvhpziL9zCWKjq+x0AnuNlTvFHt3eWqy9jqQm4ik1n5x0uNgHQ6gH4i9AE7ONGD8A4vjQBj/EgVPWFM4BHWOkAypBs4WM3JFT1Kkaw3W0O+vG6FL0o/97CBBZxrdQf4E5O8bBjEstJ97CAK6Vhn7GGXbzBJRxiMqd41AGcllDVQ3iPywW5nVP82jPQgOxh7lxAQQaxjlH8PjdQkOHSl+//AZEbd3oLq41XAAAAAElFTkSuQmCC) no-repeat !important;
+}
+
+
+/* Fix colors for some text elements and interactive elements with white background
+ */
+#login-footer,
+input,
+button,
+optgroup,
+select,
+textarea {
+    color: #000;
+}
+
+/* Previous fix crippled these out, so let's fix them...
+ */
+input.search {
+    color: #fff;
+}
+
+/* Disable arrow on the selected menu item
+ */
+#menu .nav-level-2>.nav-item.active:after {
+    display: none;
+}
+
+
+/* Show user about the presence of this userstyle on System / About page.
+ */
+#about>.name-value-list:after {
+    position: relative;
+    top: 8px;
+
+    /* Strawberry topping */
+    padding: 0px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+
+    content: "Icinga Dark V7/20191124 by dehahost";
+}
+
+/* Show user about the presence of this userstyle in login footer.
+ */
+#login-footer:after {
+    text-align: left;
+    content: "Icinga Dark V7 by dehahost"
+}
+
+
+/************************************************************** 
+* DOC SECTION
+**/
+/* <pre> element background fix
+ */
+pre {
+    background: rgba(255, 255, 255, .05);
+}
+
+/* table coloring fix
+ */
+.icinga-module.module-doc tbody>tr:nth-child(odd) {
+    background: rgba(255, 255, 255, .03);
+}
+.icinga-module.module-doc tbody>tr:nth-child(even) {
+    background: transparent;
+}
+
+/**************************************************************
+* USERSTYLE OPTIONS
+**/
+/*[[scheme]]*/
+}
