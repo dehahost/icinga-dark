@@ -1,5 +1,5 @@
 /**************************************************************
- * ICINGA DARK V7
+ * ICINGA DARK V8/20191125
  **************************************************************
  * BY DEHAHOST
 **/
@@ -60,12 +60,19 @@ input[type=tel],
 input[type=time],
 input[type=url] {
     border-color: rgba(255, 255, 255, .1) !important;
+}
+tr,
+input.search {
     border-left: none !important;
+}
+/* Dimmed thead borderline
+ */
+thead {
+   border-color: hsla(0, 0%, 100%, .3) !important;
 }
 
 /* Dimmed table head and focused input border line
  */
-thead,
 input:not([type]):focus:not([readonly]),
 input[type=text]:focus:not([readonly]),
 input[type=date]:focus:not([readonly]),
@@ -120,7 +127,10 @@ input.search {
 
 /* Disable arrow on the selected menu item
  */
-#menu .nav-level-2>.nav-item.active:after {
+#menu .nav-level-2>.nav-item.active:after,
+ul:not(.nav-level-2) > .selected > a:after,
+#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover > .nav-level-2:after,
+#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover > .nav-level-2:after {
     display: none;
 }
 
@@ -135,19 +145,19 @@ input.search {
     padding: 0px;
     border-top: 1px solid rgba(255, 255, 255, .1);
 
-    content: "Icinga Dark V7/20191124 by dehahost";
+    content: "Icinga Dark V8/20191125 by dehahost";
 }
 
 /* Show user about the presence of this userstyle in login footer.
  */
 #login-footer:after {
     text-align: left;
-    content: "Icinga Dark V7 by dehahost"
+    content: "Icinga Dark V8 by dehahost"
 }
 
 
 /************************************************************** 
-* DOC SECTION
+ * DOC SECTION
 **/
 /* <pre> element background fix
  */
@@ -165,5 +175,5 @@ pre {
 }
 
 /**************************************************************
-* USERSTYLE OPTIONS
+ * USERSTYLE OPTIONS
 **/
