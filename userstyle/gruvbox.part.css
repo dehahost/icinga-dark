@@ -1,5 +1,5 @@
 /**************************************************************
- * GRUVBOX SCHEME V1.2/20191125
+ * GRUVBOX SCHEME V2/20200216
 **/
 
 /**************************************************************
@@ -106,6 +106,12 @@ input.search.active {
     color: #EBDBB2 !important;
 }
 
+/* Selected / Active Text
+ */
+.icinga-module.module-monitoring .grid-toggle-link > i.-active {
+    color: #EBDBB2 !important;
+}
+
 /* Different color for navigation lv. 1
  */
 #menu .nav-level-1>.nav-item.active {
@@ -139,8 +145,8 @@ button>i[class*=" icon-"] {
 .control-button,
 input[type="submit"],
 .button-link {
-    border: 1px solid #BDAE93;
-    background: transparent;
+    border: 1px solid #BDAE93 !important;
+    background: transparent !important;
     color: #BDAE93;
 }
 .control-button:focus,
@@ -148,7 +154,7 @@ input[type="submit"],
 input[type="submit"]:focus,
 input[type="submit"]:hover,
 .button-link:hover {
-    background: #BDAE93;
+    background: #BDAE93 !important;
     color: #282828 !important;
 }
 
@@ -182,7 +188,15 @@ button,
 input,
 optgroup,
 select,
-textarea {
+textarea,
+.icinga-controls input[type="text"],
+.icinga-controls input[type="password"],
+.icinga-controls input[type="number"],
+.icinga-controls input[type="datetime-local"],
+.icinga-controls input[type="date"],
+.icinga-controls input[type="time"],
+.icinga-controls textarea,
+.icinga-controls select {
     background: #3C3836;
     color: #EBDBB2 !important;
     border: none;
@@ -236,7 +250,7 @@ body {
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid rgba(255, 255, 255, .05);
 
-    content: "Gruvbox scheme V1.1/20191124";
+    content: "Gruvbox scheme V2/20200216";
 }
 
 
@@ -430,10 +444,11 @@ body {
 }
 
 #login input[type=submit] {
-    background: #A89984;
+    border: unset !important;
+    background: #A89984 !important;
     color: #282828 !important;
 }
 #login input[type=submit]:hover {
-    background: #282828;
+    background: #282828 !important;
     color: #A89984 !important;
 }
