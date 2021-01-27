@@ -1,6 +1,6 @@
 @-moz-document regexp("^(http|https)://.*/icingaweb2.*") {
 /**************************************************************
- * ICINGA DARK V8/20191125
+ * ICINGA DARK V9/20210127
  **************************************************************
  * BY DEHAHOST
 **/
@@ -16,6 +16,8 @@
 #header,
 #menu,
 #login,
+#header-logo-container,
+.tabs,
 .icinga-module.module-monitoring .monitoring-statusbar:before,
 .icinga-module.module-monitoring div.timeline-legend,
 .icinga-module.module-monitoring .timeline-notification.extrapolated,
