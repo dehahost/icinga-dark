@@ -1,3 +1,3 @@
 # icinga-dark
 
-Black theme for Icinga Web 2
+Dark set of themes for Icingaweb2. Available on Userstyles.
